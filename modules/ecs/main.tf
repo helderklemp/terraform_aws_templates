@@ -1,4 +1,4 @@
-/*resource "aws_ecs_task_definition" "helderklemp" {
+resource "aws_ecs_task_definition" "helderklemp" {
   family = "helderklemp-${var.branch}"
 
   container_definitions = <<DEFINITION
@@ -17,7 +17,7 @@
   }
 ]
 DEFINITION
-}*/
+}
 
 resource "aws_ecs_cluster" "main" {
   name = "${var.ecs_cluster_name}-${var.branch}"

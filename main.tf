@@ -9,6 +9,6 @@ provider "aws" {
 }
 
 module "ecs" {
-  source           = "./modules/ecs"
+  source           = "modules/ecs"
   ecs_cluster_name = "helderklemp-first-cluster"
 }
